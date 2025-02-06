@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35303.130
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HackathonFiap", "HackathonFiap.csproj", "{11270028-F434-4A45-89FA-6CC7C2F4CBA6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{11270028-F434-4A45-89FA-6CC7C2F4CBA6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11270028-F434-4A45-89FA-6CC7C2F4CBA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11270028-F434-4A45-89FA-6CC7C2F4CBA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11270028-F434-4A45-89FA-6CC7C2F4CBA6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BF1F3D7B-0EE7-4FDB-9C2F-072DA09BC53A}
+	EndGlobalSection
+EndGlobal
