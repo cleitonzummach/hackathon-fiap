@@ -23,5 +23,7 @@ namespace HackathonFiap.Entities
         public string CRM { get; set; }
 
         public string Senha { get; set; }
+
+        public virtual Especialidade Especialidade { get; set; }
     }
 }

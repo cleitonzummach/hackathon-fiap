@@ -14,7 +14,7 @@ namespace HackathonFiap.Controllers
             _especialidadeRepository = especialidadeRepository;
         }
 
-        [HttpGet]
+        [HttpGet("consultar")]
         public IActionResult GetAll()
         {
             var especialidades = _especialidadeRepository.GetAll();
