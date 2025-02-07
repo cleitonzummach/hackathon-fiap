@@ -39,7 +39,6 @@ namespace HackathonFiap.Controllers
         }
 
         [HttpGet("buscar")]
-        [Authorize]
         public IActionResult GetMedicos(int? especialidadeId, string? nome, string? cidade)
         {
             var medicos = _medicoRepository.Get(especialidadeId, nome, cidade);
