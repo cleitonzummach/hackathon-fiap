@@ -16,7 +16,14 @@ namespace HackathonFiap.Configuration
     {
         public static void ConfigureService(this IServiceCollection services, IConfiguration configuration)
         {
-            services.AddDbContext<ContextDB>(options => options.UseNpgsql(configuration.GetConnectionString("ContextDB")));
+            var host = Environment.GetEnvironmentVariable("POSTGRES_HOST");
+            var port = Environment.GetEnvironmentVariable("POSTGRES_PORT");
+            var db = Environment.GetEnvironmentVariable("POSTGRES_DB");
+            var user = Environment.GetEnvironmentVariable("POSTGRES_USER");
+            var password = Environment.GetEnvironmentVariable("POSTGRES_PASSWORD");
+            var connectionString = $"Host={host};Port={port};Database={db};Username={user};Password={password}";
+
+            services.AddDbContext<ContextDB>(options => options.UseNpgsql(connectionString));
 
             services.AddScoped<IEspecialidadeRepository, EspecialidadeRepository>();
             services.AddScoped<IMedicoRepository, MedicoRepository>();
